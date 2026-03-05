@@ -1,0 +1,53 @@
+#container h1 {
+  padding: 500px 0;
+  text-align: center;
+}
+
+/* work */
+.long-list > li {
+  display: flex;
+  margin-bottom: 100px;
+}
+.long-list > li:last-child {
+  margin-bottom: 0;
+}
+.long-thumbnail {
+  width: 60%;
+}
+.long-thumbnail > img {
+  width: 100%;
+}
+.long-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 28px 0px 28px 28px;
+  flex-grow: 1;
+}
+.long-detail > h5 {
+  font-size: 2rem;
+}
+.long-detail > ul > li {
+  line-height: 2.6rem;
+}
+.long-detail .long-btns {
+  display: flex;
+}
+.long-detail .long-btns > a {
+  font-size: 1.8rem;
+  font-weight: bold;
+  display: block;
+  line-height: 38px;
+  border: 1px solid #516768;
+  padding: 0px 25px;
+  border-radius: 32px;
+  font-style: italic;
+}
+.long-detail .long-btns > a:first-child {
+  margin-right: 20px;
+}
+.long-detail .long-btns > a:hover,
+.long-detail .long-btns > a:focus {
+  background-color: #fff;
+  color: #333;
+}

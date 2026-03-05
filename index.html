@@ -3,10 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>깃허브 테스트</title>
-    <link rel="stylesheet" href="main.css" />
+    <title>영상 포트폴리오</title>
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prata&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="image/favicon.svg" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/copyEmail.js"></script>
   </head>
-  <body>
-    <h1>깃허브 테스트 페이지입니다.</h1>
+  <body id="content-top">
+    <header>
+      <div class="header-inner center">
+        <h1 class="logo">
+          <a href="#">
+            <img src="/image/s_logo.svg" alt="로고" />
+          </a>
+        </h1>
+        <nav class="gnb">
+          <a href="index.html">홈</a>
+          <a href="work.html">작업물</a>
+          <a href="skill.html">스킬</a>
+          <a href="profile.html">프로필</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="container">
+      <section id="main-visual">
+        <video muted autoplay loop>
+          <source src="video/main.mp4" type="video/mp4" />
+        </video>
+      </section>
+    </main>
+
+    <footer>
+      <small class="copy">&copy; 2026. ksj. All rights reserved.</small>
+      <a href="#content-top" class="btn-top">
+        <img src="image/arr-wh.png" alt="맨 위로 가기" />
+        <small>Top</small>
+      </a>
+    </footer>
   </body>
 </html>
