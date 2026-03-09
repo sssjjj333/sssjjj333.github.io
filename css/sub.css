@@ -6,7 +6,7 @@
 /* work */
 .long-list > li {
   display: flex;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 .long-list > li:last-child {
   margin-bottom: 0;
@@ -50,4 +50,26 @@
 .long-detail .long-btns > a:focus {
   background-color: #fff;
   color: #333;
+}
+
+/* skill */
+#skill {
+  margin: 160px auto;
+}
+#skill > ul {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.skill-img {
+  width: 10%;
+}
+#skill h4 {
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+#skill h4 > strong {
+  display: block;
+  font-size: 2.6rem;
+  font-weight: 800;
 }
