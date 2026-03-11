@@ -23,6 +23,10 @@ header {
 #work {
   padding: 60px 0;
 }
+.long {
+  background-color: rgba(32, 36, 47, 0.6);
+  padding: 40px 40px;
+}
 .long-list > li {
   display: flex;
   margin-bottom: 50px;
@@ -73,7 +77,9 @@ header {
 
 /* skill */
 #skill {
-  margin: 160px auto;
+  margin: 40px auto;
+  background-color: rgba(32, 36, 47, 0.6);
+  padding: 20px 20px;
 }
 #skill > ul {
   display: flex;
@@ -82,7 +88,8 @@ header {
 }
 /* 이미지를 감싸는 박스 */
 .skill-img {
-  width: 30%;
+  width: 60px;
+  height: 60px;
   /* 가운데 정렬을 위한 코드 */
   margin: 0 auto;
 }
@@ -91,7 +98,13 @@ header {
   width: 100%;
 }
 #skill ul li h4 {
-  font-size: 2rem;
-  font-weight: 100;
-  margin-bottom: 32px;
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+/* 텍스트 */
+.section-title {
+  font-size: 3rem;
+  font-weight: 800;
 }
