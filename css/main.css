@@ -65,6 +65,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0px;
+  height: 60px;
 }
 .logo {
   align-self: center;
@@ -95,8 +96,11 @@ header {
 
 /* footer */
 footer {
+  height: 60px;
   text-align: center;
-  padding-bottom: 20px;
+  display: flex;
+  justify-content: center; /* 가로 정렬 방법 */
+  align-items: center; /* 세로 정렬 방법 */
 }
 
 /* 특정 스크롤 값에서 맨위로가기 버튼이 보였다 안보였다 설정 디자인 */
