@@ -5,6 +5,12 @@ body {
   background-repeat: no-repeat;
 }
 
+#content-pro-top {
+  background-size: cover;
+  background-position: right 0 bottom -600px;
+  color: #fff;
+}
+
 header {
   position: static;
   z-index: 9999;
@@ -88,11 +94,39 @@ header {
   background-color: rgba(32, 36, 47, 0.6);
   padding: 20px 20px;
 }
-#skill > ul {
-  display: flex;
-  justify-content: space-around;
+
+.skill-section-top {
+  display: contents;
+  flex: 1;
   text-align: center;
+  background-color: white;
 }
+.skill-section-block {
+  display: contents;
+  flex: 1;
+  justify-content: space-between;
+  background-color: aqua;
+}
+.skill-section-block {
+  display: contents;
+  flex: 1;
+  justify-content: space-between;
+  background-color: skyblue;
+}
+
+.skill-section-left > ul {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  background-color: yellow;
+}
+.skill-section-right > ul {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  background-color: palevioletred;
+}
+
 /* 이미지를 감싸는 박스 */
 .skill-img {
   width: 60px;
@@ -124,26 +158,35 @@ header {
   margin-top: 20px;
 }
 .about-left {
-  width: 300px;
-  height: 600px;
-  padding: 20px 10px;
+  display: flex;
+  flex: 0 1 300px;
+  flex-direction: column;
+  padding: 50px 0 50px 50px;
+}
+.about-left-top {
+  display: flex;
+  flex: 1;
+  flex-flow: column wrap;
+  gap: 10px;
+}
+.about-left-bottom {
+  display: flex;
 }
 .about-right {
-  flex: 1;
-  padding: 10px;
   display: flex;
+  flex: 1;
   flex-direction: column;
+  gap: 70px;
+  padding: 50px 50px 50px 50px;
 }
-.about-inner-top {
+.about-right-top {
   display: flex;
   flex: 1;
   justify-content: space-between;
-  background-color: aqua;
 }
-.about-inner-bottom {
+.about-right-bottom {
   display: flex;
   justify-content: space-between;
-  background-color: aquamarine;
 }
 .ab-img-wrap {
   display: flex;

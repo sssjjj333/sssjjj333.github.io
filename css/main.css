@@ -82,7 +82,7 @@ header {
   width: 100%;
   /* 메인 비주얼 높이 */
   /* vh - 화면의 높이 단위 */
-  height: 95vh;
+  height: 90vh;
   /* aspect-ratio: 16 / 9; */
 }
 #main-visual > video {
