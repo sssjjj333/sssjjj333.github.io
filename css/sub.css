@@ -6,18 +6,29 @@ body {
 }
 
 /* 변수 정의 */
-/* :root {
-  --space-big: 50px;
-  --space-small: 20px;
+:root {
+  --space-50: 50px;
+  --space-40: 40px;
+  --space-30: 30px;
+  --space-20: 20px;
+}
 /* 변수 사용 예시
 margint-top: var(--space-big);
-}
 */
+
+#content-work-top {
+  background-size: cover;
+  background-position: right 0 bottom -300px;
+}
+
+#content-skill-top {
+  background-size: cover;
+  background-position: right 0 bottom -300px;
+}
 
 #content-pro-top {
   background-size: cover;
   background-position: right 0 bottom -600px;
-  color: #fff;
 }
 
 header {
@@ -99,22 +110,35 @@ header {
 
 /* skill */
 #skill {
-  margin: 40px auto;
+  margin: var(--space-20) auto;
   background-color: rgba(32, 36, 47, 0.6);
-  padding: 20px 20px;
+  padding: var(--space-20) var(--space-20) var(--space-50) var(--space-20);
 }
 
 .skill-section-top {
   text-align: center;
 }
+
 .skill-section-middle {
   display: flex;
   justify-content: space-between;
   text-align: center;
 }
 
+.skill-section-bottom {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
 .bottom-line {
+  padding-bottom: var(--space-50);
   border-bottom: 1px solid #fff;
+  margin-bottom: var(--space-50);
+}
+
+.section-title {
+  margin-bottom: var(--space-50);
 }
 
 .skill-section-middle .skill-section-inner:first-child .skill-section-block {
@@ -128,25 +152,11 @@ header {
   flex: 1;
   /* gap: 10px; */
   justify-content: space-between;
-  /* background-color: aqua; */
 }
+
 .skill-section-block li {
   /* flex: 1; */
   width: 190px;
-  /* background-color: aqua; */
-}
-
-.skill-section-left > ul {
-  display: flex;
-  flex: 1;
-  justify-content: space-between;
-  background-color: yellow;
-}
-.skill-section-right > ul {
-  display: flex;
-  flex: 1;
-  justify-content: space-between;
-  background-color: palevioletred;
 }
 
 /* 이미지를 감싸는 박스 */
@@ -155,11 +165,13 @@ header {
   height: 60px;
   /* 가운데 정렬을 위한 코드 */
   margin: 0 auto;
+  margin-bottom: var(--space-20);
 }
 /* 이미지 */
 .skill-img img {
   width: 100%;
 }
+
 #skill ul li h4 {
   font-size: 1.8rem;
   font-weight: 800;
@@ -168,8 +180,14 @@ header {
 
 /* 텍스트 */
 .section-title {
-  font-size: 3rem;
+  font-size: 2.4rem;
   font-weight: 800;
+}
+
+.skill-section-block li {
+  font-size: 1.5rem;
+  font-weight: 200;
+  line-height: 150%;
 }
 
 /* 프로필 */
@@ -177,7 +195,7 @@ header {
   background-color: rgba(32, 36, 47, 0.6);
   display: flex;
   flex-grow: 1;
-  margin-top: 20px;
+  margin-top: var(--space-20);
 }
 .about-left {
   display: flex;
@@ -219,6 +237,10 @@ header {
   overflow: hidden;
 }
 
+.about-right .about-right-top .ab-text-wrap:last-child {
+  width: 389.78px;
+}
+
 .ab-text-wrap > h4 {
   font-size: 3.2rem;
   font-weight: bold;
@@ -230,7 +252,8 @@ header {
 }
 
 .ab-text-wrap > ul > li {
-  font-size: 1.5rem;
+  font-size: 1.5srem;
+  font-weight: 200;
   line-height: 3rem;
 }
 
