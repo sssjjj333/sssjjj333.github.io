@@ -1,35 +1,10 @@
 $(function () {
-  // 1. 네비게이션 클릭 이벤트
-  // $('.gnb a').each(function (index) {
-  //   $(this).click(function (e) {
-  //     e.preventDefault(); // a 태그 기본 동작 방지
-
-  //     // 클릭한 시점의 각 섹션 ID 배열
-  //     let sections = ['#profile', '#skill', '#work', '#contact'];
-
-  //     // 해당 섹션의 현재 위치를 실시간으로 파악
-  //     let targetTop = $(sections[index]).offset().top;
-
-  //     // Contact 섹션만 예외 처리가 필요하다면 조건문 추가
-  //     let offsetValue = sections[index] === '#contact' ? 0 : 100;
-
-  //     $('html,body')
-  //       .stop()
-  //       .animate(
-  //         {
-  //           scrollTop: targetTop - offsetValue,
-  //         },
-  //         500,
-  //       );
-  //   });
-  // });
-
-  // 2. Top 버튼 클릭
+  // Top 버튼 클릭
   $('.btn-top').click(function () {
     $('html,body').stop().animate({ scrollTop: 0 }, 500);
   });
 
-  // 3. 스크롤 위치에 따른 Top 버튼 노출
+  // 스크롤 위치에 따른 Top 버튼 노출
   $(window).scroll(function () {
     let scrH = $(window).scrollTop();
 
@@ -39,5 +14,41 @@ $(function () {
     } else {
       $('.btn-top').removeClass('show');
     }
+  });
+
+  // 라이트 박스
+  $(function () {
+    // 1. 라이트박스 열기
+    $('.long-thumbnail').click(function () {
+      // 클릭한 요소의 가장 가까운 부모인 .work-box가 전체 .work-box 중 몇 번째인지 계산
+      var idx = $(this).closest('.work-item').index();
+
+      // 해당 순서와 일치하는 라이트박스 선택
+      var $targetBox = $('.long-light-box').eq(idx);
+      var $iframe = $targetBox.find('iframe');
+
+      // 원래 적혀있던 src 주소 가져오기
+      var videoSrc = $iframe.attr('src');
+
+      // src를 다시 입력하면 영상이 처음부터 자동 재생됨
+      $iframe.attr('src', videoSrc);
+      $targetBox.fadeIn(500);
+    });
+
+    // 2. 라이트박스 닫기
+    $('.long-light-box').click(function (e) {
+      // 배경이나 wrap 클릭 시 닫기
+      if ($(e.target).is('.long-light-box') || $(e.target).is('.iframe_wrap')) {
+        var $this = $(this);
+        var $iframe = $this.find('iframe');
+        var currentSrc = $iframe.attr('src');
+
+        $this.fadeOut(500, function () {
+          // src를 비워서 소리를 끄고 다시 채워둠 (다음 재생 준비)
+          $iframe.attr('src', '');
+          $iframe.attr('src', currentSrc);
+        });
+      }
+    });
   });
 });
