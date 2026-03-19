@@ -7,10 +7,10 @@ body {
 
 /* 변수 정의 */
 :root {
-  --space-50: 50px;
-  --space-40: 40px;
-  --space-30: 30px;
-  --space-20: 20px;
+  --space-4: 50px;
+  --space-3: 40px;
+  --space-2: 30px;
+  --space-1: 20px;
 }
 /* 변수 사용 예시
 margint-top: var(--space-big);
@@ -142,9 +142,9 @@ header {
 
 /* skill */
 #skill {
-  margin: var(--space-20) auto;
+  margin: var(--space-1) auto;
   background-color: rgba(32, 36, 47, 0.6);
-  padding: var(--space-20) var(--space-20) var(--space-50) var(--space-20);
+  padding: var(--space-1) var(--space-1) var(--space-4) var(--space-1);
 }
 
 .skill-section-top {
@@ -164,13 +164,13 @@ header {
 }
 
 .bottom-line {
-  padding-bottom: var(--space-50);
+  padding-bottom: var(--space-4);
   border-bottom: 1px solid #fff;
-  margin-bottom: var(--space-50);
+  margin-bottom: var(--space-4);
 }
 
 .section-title {
-  margin-bottom: var(--space-50);
+  margin-bottom: var(--space-4);
 }
 
 .skill-section-middle .skill-section-inner:first-child .skill-section-block {
@@ -197,7 +197,7 @@ header {
   height: 60px;
   /* 가운데 정렬을 위한 코드 */
   margin: 0 auto;
-  margin-bottom: var(--space-20);
+  margin-bottom: var(--space-1);
 }
 /* 이미지 */
 .skill-img img {
@@ -227,7 +227,7 @@ header {
   background-color: rgba(32, 36, 47, 0.6);
   display: flex;
   flex-grow: 1;
-  margin-top: var(--space-20);
+  margin-top: var(--space-1);
 }
 .about-left {
   display: flex;
