@@ -88,7 +88,7 @@ header {
   /* aspect-ratio: 16 / 9; */
 }
 #main-visual > video {
-  position: absolute;
+  /* position: absolute; */
   padding: 80px 80px 0 80px;
   width: 100%;
   /* 높이가 부모의 95% */
