@@ -151,8 +151,14 @@ footer {
     font-size: 1.4rem;
     margin-left: 10px;
   }
+  #main-visual {
+    /* 헤더 높이만큼 패딩 탑 */
+    padding-top: 60px;
+    height: auto;
+  }
   #main-visual > video {
-    top: 46px; /* 본인의 헤더 높이만큼 설정 */
+    width: 100%;
+    padding: 0;
   }
   footer {
     padding: 16px;
