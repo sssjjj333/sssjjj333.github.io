@@ -399,8 +399,6 @@ margint-top: var(--space-big);
   flex: 1;
   gap: 30px;
 }
-.about-bottom {
-}
 .ab-img-wrap {
   display: flex;
   width: 150px;
