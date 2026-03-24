@@ -295,6 +295,7 @@ margint-top: var(--space-big);
   background-color: rgba(32, 36, 47, 0.6);
   padding: var(--space-1) var(--space-1) var(--space-4) var(--space-1);
   text-align: center;
+  width: 90%;
 }
 
 .skill-section-top {
@@ -386,7 +387,7 @@ margint-top: var(--space-big);
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* background-color: rgba(32, 36, 47, 0.6); */
+  background-color: rgba(32, 36, 47, 0.6);
   width: 90%;
   margin-top: var(--space-1);
   text-align: center;
@@ -526,6 +527,7 @@ margint-top: var(--space-big);
   }
   .long-detail .long-btns > a {
     font-size: 1.4rem;
+    align: center;
   }
 
   /* cube */
