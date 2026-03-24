@@ -188,6 +188,7 @@ margint-top: var(--space-big);
 .long-detail .long-btns {
   display: flex;
   margin-top: 10px;
+  justify-content: center;
 }
 .long-detail .long-btns > a {
   font-size: 1.8rem;
@@ -199,9 +200,6 @@ margint-top: var(--space-big);
   padding: 0px 25px;
   border-radius: 32px;
   font-style: italic;
-}
-.long-detail .long-btns > a:first-child {
-  margin-right: 20px;
 }
 .long-detail .long-btns > a:hover,
 .long-detail .long-btns > a:focus {
