@@ -129,7 +129,6 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
   cursor: default; /* 영상 근처에서는 기본 커서 */
-  background-color: aqua;
 }
 
 #work1 {
