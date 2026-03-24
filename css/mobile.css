@@ -521,13 +521,13 @@ margint-top: var(--space-big);
   }
   .long-detail {
     padding: 15px;
+    text-align: left;
   }
   .long-detail > ul {
     margin: 10px 0px;
   }
   .long-detail .long-btns > a {
     font-size: 1.4rem;
-    align: center;
   }
 
   /* cube */
