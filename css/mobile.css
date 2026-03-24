@@ -383,9 +383,14 @@ margint-top: var(--space-big);
 
 /* 프로필 */
 #profile {
-  background-color: rgba(32, 36, 47, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: rgba(32, 36, 47, 0.6); */
+  width: 90%;
   margin-top: var(--space-1);
   text-align: center;
+  background-color: aqua;
 }
 .section-title {
   margin-bottom: var(--space-2);
@@ -394,6 +399,10 @@ margint-top: var(--space-big);
   display: flex;
   flex: 1;
   gap: 30px;
+  background-color: antiquewhite;
+}
+.about-bottom {
+  background-color: #69f;
 }
 .ab-img-wrap {
   display: flex;
@@ -434,6 +443,10 @@ margint-top: var(--space-big);
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 3rem;
+}
+.ab-text-wrap.education ul li {
+  display: flex;
+  gap: 5px;
 }
 
 /* tablet */
